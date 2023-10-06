@@ -1,0 +1,12 @@
+/****** General ***********/
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #9356DC;
+  --secondary-color: #FF79DA;
+  --tertiary-color: #99E2D0;
+  --font-family-title: 'Strickland', sans-serif;
+  --font-family-text: 'Roboto', sans-serif;
+}
