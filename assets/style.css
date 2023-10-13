@@ -138,17 +138,21 @@ button {
 .working-list {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   border-radius: 20px;
   background: var(--Background, #F6F6F6);
   width: 100%;
   height: 72.379px;
 }
 
+.working-list i {
+position: absolute;
+margin: 25px;
+}
+
 .working-list p {
   font-family: var(--font-family-text);
   font-weight: bold;
-  margin: 0;
+  margin-left: 65px;
 }
 
 .restaurants {
