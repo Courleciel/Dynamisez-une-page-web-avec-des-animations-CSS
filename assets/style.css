@@ -169,6 +169,19 @@ button {
   gap: 15px;
 }
 
+#badge {
+  background-color: var(--tertiary-color);
+  color: #008766;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  border-radius: 0;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 68%;
+  border-radius: 2px;
+}
+
 .restaurants-card {
   width: 90%;
   margin: 0 auto;
@@ -205,4 +218,14 @@ button {
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+}
+
+.cards-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heart {
+  margin-top: 23px;
+  margin-right: 5%;
 }
