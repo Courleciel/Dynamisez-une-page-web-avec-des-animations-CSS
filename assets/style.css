@@ -107,6 +107,7 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 25px;
+  margin-bottom: 68px;
 }
 
 .list > div {
@@ -148,4 +149,60 @@ button {
   font-family: var(--font-family-text);
   font-weight: bold;
   margin: 0;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding-top: 54px;
+}
+.restaurants h1 {
+  font-family: var(--font-family-text);
+  font-size: 24px;
+  margin-left: 5%;
+  margin-right: 21%;
+}
+
+.restaurants-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.restaurants-card {
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.restaurants-card img {
+  width: 100%;
+  height: 231px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+.restaurants-card h2 {
+  font-family: var(--font-family-text);
+  font-size: 18px;
+  margin: 0;
+}
+
+.restaurants-card p {
+  font-family: var(--font-family-text);
+  font-size: 17px;
+  margin: 0;
+}
+
+.restaurants-card-text {
+  display: flex;
+  padding-left:15px;
+  padding-bottom: 12px;
+  padding-top: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
 }
