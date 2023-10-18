@@ -249,6 +249,43 @@ margin: 25px;
   margin-right: 5%;
 }
 
+.heart i {
+  color: black;
+  transition: color 0.3s;
+}
+
+#heart-checkbox1 {
+  display: none;
+}
+
+#heart-checkbox1:checked + label i {
+  color: var(--main-color)
+}
+
+#heart-checkbox2 {
+  display: none;
+}
+
+#heart-checkbox2:checked + label i {
+  color: var(--main-color)
+}
+
+#heart-checkbox3 {
+  display: none;
+}
+
+#heart-checkbox3:checked + label i {
+  color: var(--main-color)
+}
+
+#heart-checkbox4 {
+  display: none;
+}
+
+#heart-checkbox4:checked + label i {
+  color: var(--main-color)
+}
+
 footer {
   background: var(--Grey, #353535);
   display: flex;
