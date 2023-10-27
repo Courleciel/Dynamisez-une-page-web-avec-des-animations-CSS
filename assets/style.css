@@ -383,20 +383,49 @@ font-size: 28px;
 }
 
 .menu-card {
-  background-color: white;
-  border-radius: 15px;
-  position: relative;
   width: 93%;
   margin: 12px auto 12px;
   padding: 15px;
+  background-color: white;
+  border-radius: 15px;
+  transition: transform 0.3s;
 }
 
-.menu-card p:last-child {
+.card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.text {
+  flex: 1;
+}
+
+.menu-card .fa-check {
   position: absolute;
-  bottom: 15px;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #0078d4;
+  opacity: 0;
+  transition: right 0.3s, opacity 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateX(-10px);
+}
+
+.menu-card:hover .fa-check {
   right: 15px;
+  opacity: 1;
+}
+
+.price {
   color: #353535;
   font-weight: 700;
+  align-self: flex-end;
 }
 
 .menu-card h3, .menu-card p {
