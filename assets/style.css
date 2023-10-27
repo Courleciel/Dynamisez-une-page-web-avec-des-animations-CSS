@@ -346,6 +346,7 @@ background-color: #F6F6F6;
 margin-top: -20px;
 position: relative;
 border-radius: 20px 20px 0 0;
+padding-bottom: 40px;
 }
 
 .menu-title h1 {
@@ -375,9 +376,10 @@ font-size: 28px;
 }
 
 .border {
-  border-top: 2px solid var(--tertiary-color);
+  border-top: 3px solid var(--tertiary-color);
   width: 10%;
   margin-left: 5%;
+  margin-top: 5px;
 }
 
 .menu-card {
@@ -394,12 +396,27 @@ font-size: 28px;
   bottom: 15px;
   right: 15px;
   color: #353535;
+  font-weight: 700;
 }
 
 .menu-card h3, .menu-card p {
   font-family: var(--font-family-text);
   margin-bottom: 5px;
   margin-top: 0;
+}
+
+.menu-card h3 {
+  font-size: 18px;
+}
+
+.menu-card p {
+  font-size: 15px;
+}
+.button-menu {
+  text-align: center;
+  display: block;
+  margin: 40px auto 0;
+  width: 53%;
 }
 
 @media screen and (min-width: 1024px) {
