@@ -380,6 +380,28 @@ font-size: 28px;
   margin-left: 5%;
 }
 
+.menu-card {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  width: 93%;
+  margin: 12px auto 12px;
+  padding: 15px;
+}
+
+.menu-card p:last-child {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: #353535;
+}
+
+.menu-card h3, .menu-card p {
+  font-family: var(--font-family-text);
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
 @media screen and (min-width: 1024px) {
 
 .header {
