@@ -11,6 +11,8 @@
   --font-family-text: 'Roboto', sans-serif;
 }
 
+/****** Homepage ***********/
+
 body {
   margin: 0 auto;
 }
@@ -62,6 +64,8 @@ header {
   padding-top: 14px;
   padding-bottom: 13px;
   background: var(--White, #FFF);
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -322,6 +326,19 @@ footer p {
 .footer-text div {
   display: flex;
   gap: 11px;
+}
+
+/****** Menu ***********/
+
+.header i {
+  position: fixed;
+  left: 20px; /* Ajustez cette valeur pour positionner l'icône à gauche de la page */
+  top: 3%;
+  z-index: 1;
+}
+
+.restaurant1 {
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
