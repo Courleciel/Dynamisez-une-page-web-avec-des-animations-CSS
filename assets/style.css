@@ -28,7 +28,6 @@ header {
   padding-top: 14px;
   padding-bottom: 13px;
   background: var(--White, #FFF);
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .logo {
@@ -289,4 +288,76 @@ footer p {
 .footer-text div {
   display: flex;
   gap: 11px;
+}
+
+@media screen and (min-width: 1024px) {
+
+.header {
+  padding-top: 14px;
+  padding-bottom: 13px;
+}
+
+.restaurants-explorer h1 {
+  font-size: 40px;
+  font-family: var(--font-family-text);
+}
+
+button {
+  width: 21%;
+}
+
+.fonctionnement h1 {
+  margin-top: 50px;
+  margin-left: 12%;
+  margin-bottom: 25px;
+}
+
+.list {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.list > div {
+  width: 100%;
+}
+
+.working-list p {
+  margin-left: 28%;
+}
+
+.working-list i {
+  margin: 10%;
+}
+
+.restaurants-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.restaurants-card {
+  width: 78%;
+}
+
+#badge {
+  margin-left: 25%;
+}
+
+.restaurants h1 {
+  margin-left: 12%;
+  margin-bottom: 25px;
+}
+
+footer {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.footer-text {
+  flex-direction: row;
+  gap: 20px;
+}
 }
