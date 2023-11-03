@@ -396,6 +396,7 @@ font-size: 28px;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  width: 100%;
 }
 
 .text {
@@ -415,8 +416,8 @@ font-size: 28px;
   opacity: 0;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  position: absolute;
   visibility: hidden;
-
 }
 
 .price {
@@ -425,18 +426,32 @@ font-size: 28px;
   align-self: flex-end;
   margin-bottom: 10px;
   margin-right: 15px;
-  transform: translateX(60px);
   transition: transform 0.3s ease-in-out;
+}
+
+.text h3, .text p {
+  width: 100%;
+  white-space: nowrap;
+  transition: width 0.3s;
+}
+
+.menu-card:hover .text h3,
+.menu-card:hover .text p {
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu-card:hover .fa-circle-check {
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
+  right: 0
 }
 
 .menu-card:hover .price {
-  transform: translateX(0);
+  transform: translateX(-60px);
 }
 
 .menu-card h3, .menu-card p {
@@ -464,6 +479,7 @@ font-size: 28px;
 .header {
   padding-top: 14px;
   padding-bottom: 13px;
+  margin: 0 auto;
 }
 
 .restaurants-explorer h1 {
