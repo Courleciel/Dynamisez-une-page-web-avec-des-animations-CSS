@@ -125,6 +125,7 @@ header {
 
 button {
   font-family: var(--font-family-text);
+  font-size: 16px;
   color: white;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -223,6 +224,11 @@ margin: 25px;
   align-items: center;
   gap: 15px;
   padding-bottom: 66px;
+}
+
+.restaurants-cards a {
+  text-decoration: none;
+  color: black;
 }
 
 #badge {
@@ -328,6 +334,10 @@ footer p {
   gap: 11px;
 }
 
+.footer-text a {
+  text-decoration: none;
+}
+
 /****** Menu ***********/
 
 .header i {
@@ -388,7 +398,20 @@ font-size: 28px;
   background-color: white;
   border-radius: 15px;
   transition: transform 0.3s;
-  position: relative
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .card-content {
@@ -407,8 +430,8 @@ font-size: 28px;
 .menu-card .fa-circle-check {
   color: white;
   align-self: flex-end;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 39.5px;
+  padding-bottom: 39.5px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: var(--tertiary-color);
@@ -544,5 +567,38 @@ footer {
 .footer-text {
   flex-direction: row;
   gap: 20px;
+}
+
+.menu {
+  width: 73%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-title {
+  justify-content: center;
+  gap: 24px;
+}
+
+.border {
+  width: 4%;
+  margin-left: 20%;
+}
+
+.menu-card {
+  width: 60%;
+}
+
+.menu h2 {
+  margin-left: 20%;
+  margin-top: 40px;
+}
+
+.button-menu {
+  width: 20%;
+}
+
+footer {
+  padding-top: 50px;
 }
 }
