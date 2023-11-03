@@ -385,10 +385,10 @@ font-size: 28px;
 .menu-card {
   width: 93%;
   margin: 12px auto 12px;
-  padding: 15px;
   background-color: white;
   border-radius: 15px;
   transition: transform 0.3s;
+  position: relative
 }
 
 .card-content {
@@ -400,32 +400,43 @@ font-size: 28px;
 
 .text {
   flex: 1;
+  padding: 15px;
 }
 
-.menu-card .fa-check {
-  position: absolute;
-  top: 50%;
-  right: -25px;
-  transform: translateY(-50%);
-  font-size: 20px;
-  color: #0078d4;
+.menu-card .fa-circle-check {
+  color: white;
+  align-self: flex-end;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--tertiary-color);
+  border-radius: 0 15px 15px 0;
   opacity: 0;
-  transition: right 0.3s, opacity 0.3s;
-}
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  visibility: hidden;
 
-.menu-card:hover {
-  transform: translateX(-10px);
-}
-
-.menu-card:hover .fa-check {
-  right: 15px;
-  opacity: 1;
 }
 
 .price {
   color: #353535;
   font-weight: 700;
   align-self: flex-end;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  transform: translateX(60px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-card:hover .fa-circle-check {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-card:hover .price {
+  transform: translateX(0);
 }
 
 .menu-card h3, .menu-card p {
