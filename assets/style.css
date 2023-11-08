@@ -116,11 +116,25 @@ header {
 }
 
 .restaurants-explorer a {
-  width: 100%;
+  width: 16%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  font-family: var(--font-family-text);
+  font-size: 16px;
+  color: white;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: var(--Button-Gradient, linear-gradient(193deg, var(--main-color) -11.44%, var(--secondary-color) 123.93%));
+  border: none;
+  height: 50px;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.restaurants-explorer a:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
 button {
@@ -232,7 +246,7 @@ margin: 25px;
   width: 100%
 }
 
-#badge {
+.badge {
   background-color: var(--tertiary-color);
   color: #008766;
   padding: 5px 10px;
@@ -243,6 +257,7 @@ margin: 25px;
   margin-top: 10px;
   margin-left: 68%;
   border-radius: 2px;
+  font-family: var(--font-family-text);
 }
 
 .restaurants-card {
@@ -266,7 +281,7 @@ margin: 25px;
   margin: 0;
 }
 
-.restaurants-card p {
+.restaurant-text {
   font-family: var(--font-family-text);
   font-size: 17px;
   margin: 0;
@@ -556,7 +571,7 @@ button {
   width: 78%;
 }
 
-#badge {
+.badge {
   margin-left: 25%;
 }
 
