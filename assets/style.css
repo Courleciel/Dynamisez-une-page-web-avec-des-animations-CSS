@@ -116,7 +116,7 @@ header {
 }
 
 .restaurants-explorer a {
-  width: 16%;
+  width: 58%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -529,6 +529,10 @@ font-size: 28px;
 .restaurants-explorer h1 {
   font-size: 40px;
   font-family: var(--font-family-text);
+}
+
+.restaurants-explorer a {
+ width: 15%;
 }
 
 button {
