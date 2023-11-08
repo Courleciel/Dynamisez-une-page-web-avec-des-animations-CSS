@@ -342,8 +342,8 @@ footer p {
 /****** Menu ***********/
 
 .header i {
-  position: fixed;
-  left: 20px; /* Ajustez cette valeur pour positionner l'icône à gauche de la page */
+  position: absolute;
+  left: 20px;
   top: 3%;
   z-index: 1;
 }
@@ -504,6 +504,11 @@ font-size: 28px;
   padding-top: 14px;
   padding-bottom: 13px;
   margin: 0 auto;
+}
+
+.restaurant1 {
+  height: 500px;
+  object-fit: cover;
 }
 
 .restaurants-explorer h1 {
