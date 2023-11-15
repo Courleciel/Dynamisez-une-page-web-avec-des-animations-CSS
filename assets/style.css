@@ -80,6 +80,34 @@ header {
   align-items: flex-start;
 }
 
+.location-dot {
+  color: #353535;
+}
+
+.fa-mobile-screen {
+  color: #7E7E7E;
+}
+
+.fa-list-ul {
+  color: #7E7E7E;
+}
+
+.fa-store {
+  color: #9356dc;
+}
+
+.fa-utensils {
+  color: #ffffff;
+}
+
+.fa-handshake-angle {
+  color: #ffffff;
+}
+
+.fa-arrow-left {
+  color: #232323;
+}
+
 .location {
   display: flex;
   justify-content: center;
@@ -129,7 +157,7 @@ header {
   font-size: 16px;
   color: white;
   border-radius: 25px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.35);
   background: var(--Button-Gradient, linear-gradient(193deg, var(--main-color) -11.44%, var(--secondary-color) 123.93%));
   border: none;
   height: 50px;
@@ -146,7 +174,7 @@ button {
   font-size: 16px;
   color: white;
   border-radius: 25px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.35);
   background: var(--Button-Gradient, linear-gradient(193deg, var(--main-color) -11.44%, var(--secondary-color) 123.93%));
   border: none;
   width: 58%;
@@ -310,6 +338,7 @@ margin: 25px;
 .fa-heart {
   margin-top: 23px;
   margin-right: 5%;
+  transition: all 0.5s ease;
 }
 
 .fa-heart:hover {
@@ -318,9 +347,19 @@ margin: 25px;
 }
 
 .fa-heart:hover::before {
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  animation: fillHeart 0.5s forwards;
+}
+
+@keyframes fillHeart {
+  from {
+    color: white;
+    font-weight: 600;
+  }
+  to {
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 footer {
@@ -363,7 +402,6 @@ footer p {
 .header i {
   position: absolute;
   left: 20px;
-  top: 3%;
   z-index: 1;
 }
 
@@ -419,6 +457,7 @@ font-size: 28px;
   border-radius: 15px;
   transition: transform 0.3s;
   position: relative;
+  overflow: hidden;
   opacity: 0;
   animation: fadeIn 2s ease forwards;
 }
@@ -461,6 +500,7 @@ font-size: 28px;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   position: absolute;
   visibility: hidden;
+  right: 0;
 }
 
 .price {
@@ -490,7 +530,6 @@ font-size: 28px;
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
-  right: 0
 }
 
 .menu-card:hover .price {
@@ -515,6 +554,11 @@ font-size: 28px;
   display: block;
   margin: 40px auto 0;
   width: 53%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 1024px) {
