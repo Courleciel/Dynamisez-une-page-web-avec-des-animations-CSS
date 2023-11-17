@@ -272,6 +272,10 @@ margin: 25px;
   padding-bottom: 66px;
 }
 
+.restaurants-cards article {
+  width: 100%;
+}
+
 .restaurants-cards a {
   text-decoration: none;
   color: black;
@@ -445,7 +449,7 @@ font-size: 28px;
 
 .border {
   border-top: 3px solid var(--tertiary-color);
-  width: 10%;
+  width: 40px;
   margin-left: 5%;
   margin-top: 5px;
 }
@@ -619,6 +623,7 @@ button {
   margin-right: 7%;
 }
 
+
 .restaurants-card {
   width: 78%;
 }
@@ -654,7 +659,7 @@ footer {
 }
 
 .border {
-  width: 4%;
+  width: 40px;
   margin-left: 20%;
 }
 
