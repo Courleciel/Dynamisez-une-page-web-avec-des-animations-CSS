@@ -290,8 +290,8 @@ margin: 25px;
   font-size: 14px;
   border-radius: 0;
   position: absolute;
-  margin-top: 10px;
-  margin-left: 68%;
+  top: 10px;
+  right: 20px;
   border-radius: 2px;
   font-family: var(--font-family-text);
 }
@@ -301,6 +301,7 @@ margin: 25px;
   margin: 0 auto;
   background-color: white;
   border-radius: 15px;
+  position: relative;
 }
 
 .restaurants-card img {
@@ -628,9 +629,9 @@ button {
   width: 78%;
 }
 
-.badge {
+/* .badge {
   margin-left: 25%;
-}
+} */
 
 .restaurants h1 {
   margin-left: 12%;
